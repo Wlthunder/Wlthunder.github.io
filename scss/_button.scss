@@ -3,11 +3,11 @@
 .main_btn{
 	display: inline-block;
 	background: $baseColor;
-	padding: 0px 18px;
+	padding: 0px 50px;
 	color: #fff;
-	font-family: $headingFont;
-	font-size: 14px;
-	font-weight: 400;
+	font-family: $primary-font;
+	font-size: 13px;
+	font-weight: 500;
 	line-height: 48px;
 	border-radius: 0px;
 	outline: none !important;
@@ -15,74 +15,47 @@
 	text-align: center;
 	border: 1px solid $baseColor;
 	cursor: pointer;
-	text-transform: capitalize;
 	@include transition;
 	&:hover{
-		background: #fff;
+		background: transparent;
 		color: $baseColor;
-		border: 1px solid $baseColor;
-	}
-}
-
-.main_btn_light{
-	display: inline-block;
-	border: 1px solid $baseColor;
-	padding: 0px 18px;
-	color: #33363e;
-	font-family: $headingFont;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 48px;
-	border-radius: 0px;
-	outline: none !important;
-	box-shadow: none !important;
-	text-align: center;
-	border: 1px solid $baseColor;
-	cursor: pointer;
-	text-transform: capitalize;
-	@include transition;
-	&:hover{
-		background: $baseColor;
-		color: #fff;
 	}
 }
 .main_btn2{
 	display: inline-block;
-	background: #fff;
+	background: $baseColor;
 	padding: 0px 32px;
-	color: $dip;
-	font-family: $headingFont;
-	font-size: 14px;
+	color: #fff;
+	font-family: $primary-font;
+	font-size: 13px;
 	font-weight: 500;
-	line-height: 48px;
-	border-radius: 5px;
+	line-height: 38px;
+	border-radius: 0px;
 	outline: none !important;
 	box-shadow: none !important;
 	text-align: center;
-	border: 1px solid #fff;
+	border: 1px solid $baseColor;
 	cursor: pointer;
 	@include transition;
 	&:hover{
-		background: $baseColor;
-		color: #fff;
-		border-color: $baseColor;
+		background: transparent;
+		color: $baseColor;
 	}
 }
 .submit_btn{
 	width: auto;
 	display: inline-block;
-	background: $baseColor;
-	padding: 0px 50px;
+	background: #000;
+	padding: 0px 40px;
 	color: #fff;
-	font-family: $headingFont;
 	font-size: 13px;
 	font-weight: 500;
 	line-height: 50px;
-	border-radius: 5px;
+	border-radius: 0px;
 	outline: none !important;
 	box-shadow: none !important;
 	text-align: center;
-	border: 1px solid $baseColor;
+	border: 1px solid #000;
 	cursor: pointer;
 	@include transition;
 	&:hover{
@@ -96,7 +69,7 @@
 	background: #f9f9ff;
 	padding: 0px 35px;
 	color: $dip;
-	font-family: $headingFont;
+	font-family: $primary-font;
 	font-size: 13px;
 	font-weight: 500;
 	line-height: 34px;
@@ -113,129 +86,32 @@
 		border-color: $baseColor;
 	}
 }
-.black_btn{
-	padding: 0px 44px;
-	line-height: 50px;
-	background: $dip;
-	color: $baseColor;
-	display: inline-block;
-	border-radius: 5px;
-	font-size: 13px;
-	font-family: $headingFont;
-	font-weight: 500;
-	@include transition;
-	&:hover{
-		background: $baseColor;
-		color: $dip;
-	}
-}
-
-
-.play_btn a {
-	color: #fff;
-	border: 2px solid #fff;
-	width: 70px;
-	height: 70px;
-	display: inline-block;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 70px;
-	font-size: 29px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-}
-
-.link_one{
-	font-size: 15px;
-	font-family: $headingFont;
-	color: #33363e;
-	letter-spacing: 1.5px;
-	position: relative;
-	&:after{
-		content: '';
-		position: absolute;
-		left: 0;
-		bottom: -14px;
-		height: 2px;
-		width: 40px;
-		background: #33363e;
-	}
-	&:hover{
-		&:after{
-			width: 100%;
-			background: $baseColor;
-			@include transition;
-		}
-	}
-}
-/*=================== custom button rule start ====================*/
-
-.button{
-	font-family: $headingFont;
-	display: inline-block;
-	border: 1px solid transparent;
-	font-size: 15px;
-	font-weight: 500;
-	padding: 12px 54px;
-	border-radius: 4px;
-	color: $white;
-	border: 1px solid $baseColor;
-	text-transform: uppercase;
+.gad_btn{
 	background: $baseColor;
-	cursor: pointer;
-	@include transition;
-
-	@media(max-width: 767px){
-		font-size: 13px;
-		padding: 9px 24px;
-	}
-
-	&:hover{
-		background: $baseColor;
-		color: $white;
-	}
-
-
-	&-link{
-		letter-spacing: 0;
-		color: #3b1d82;
-		border: 0;
-		padding: 0;
-
-		&:hover{
-			background: transparent;
-			color: #3b1d82;
-		}
-	}
-
-	&-header{
-		background: $baseColor;
-		color: $white;
-		border-color: $baseColor;
-
-		&:hover{
-			background: #b8024c;
-			color: $white;
-		}
-	}
-
-	&-contactForm{
-
-		background: $baseColor;
-		color: $white;
-		border-color: $baseColor;
-		padding: 12px 25px;
-
-		&:hover{
-			border-color: $title-color;
-			background: $title-color;
-			color: $white;
-		}
-	}
+	color: #fff;
+	display: inline-block;
+	padding: 0px 20px;
+	line-height: 30px;
+	border-radius: 15px;
+	font-size: 12px;
+	font-weight: 500;
+	font-family: $primary-font;
 }
 
+.blog_btn{
+	display: inline-block;
+	border: 1px solid #e9e9e9;
+	background: #f9f9ff;
+	padding: 0px 28px;
+	border-radius: 5px;
+	line-height: 38px;
+	color: $dip;
+	&:hover{
+		background: $baseColor;
+		color: #fff;
+		border-color: $baseColor;
+	}
+}
 
 /* End Main Button Area css
 ============================================================================================ */
